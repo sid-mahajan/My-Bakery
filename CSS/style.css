@@ -1,11 +1,65 @@
 *{
   box-sizing: border-box;
 }
- .m1 ul{
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+  padding-left: 300px;
+  overflow: hidden;
+  background-color: blue;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+ /*.m1 ul{
   list-style-type: none;
   margin: 0px;
   overflow: hidden;
   padding-left: 300px;
+  padding-bottom: 0px;
   background-color: blue;
  }
  .m1 li {
@@ -19,23 +73,25 @@
   color: white;
   font-size: 20px;
   text-decoration: none;
-}
+}*/
 .secondary ul {
   list-style-type: none;
   overflow: hidden;
-  margin: 0px;
+  height: 30px;
+  padding-bottom: 50px;
   padding-right: 170px;
   background-color: orange;
+  margin: 0px;
 }
 .secondary li {
   float: right;
-  padding: 10px;
+  padding: 0px;
   text-align: center;
 }
 .secondary a {
   display: block;
   color: black;
-  font-size: 20px;
+  font-size: 23px;
   text-align: center;
   text-decoration: none;
 }
@@ -48,66 +104,55 @@
   border-color: pink;
   background-color: pink;
   padding: 20px;
-  margin-bottom: 0px;
+  padding-bottom: 400px;
+  padding-left: 260px;
+  padding-right: 180px;
+  margin-bottom: 100px;
 }
 .third h1{
   text-align: center;
   color: gray;
 }
 .third p{
-  font-size: 20px;
+  font-size: 17.2px;
   text-align: center;
-  line-height: 1.2;
-  margin-left: 120px;
-  margin-right: 120px;
+  line-height: 1.4;
+  word-spacing: 0.6px;
+  padding-right: 50px;
 }
-.img1{
-  display: inline-block;
-  margin-left: 160px;
-  height: 400px;
+div.gallery2 {
+  margin-left: 10px;
+  border: 1px solid #ccc;
   margin-bottom: 0px;
-  width: 570px;
+  float: left;
+  width: 480px;
 }
-.img2{
-  display: inline-block;
-  width: 570px;
-  height: 400px;
-  padding-left: 15px;
-  padding-bottom: 0px;
+div.gallery2 img {
+  width: 100%;
+  height: 100%;
+}
+
+div.desc1 {
+  padding: 10px;
   margin-top: 0px;
-  margin-bottom: 0px;
-}
-.para1a{
-  padding-left: 210px;
+  text-align: center;
+  color: white;
   background-color: blue;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-left: 160px;
-  width: 540px;
-  margin-top: 0px;
-}
-.para1b{
-  display:block;
-  background-color: blue;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-left: 700px;
-  width: 540px;
-  margin-top: 0px;
-  height: 50px;
 }
 .para2{
    margin-left: 120px;
   margin-right: 120px;
+  background-color: white;
 }
 .para2 h1,h2{
   text-align: center;
   color: grey;
 }
 .para2 p{
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
-  line-height: 1.2;
+  word-spacing: 1px;
+  line-height: 1.4;
   padding-left: 100px;
   padding-right: 100px;
 }
@@ -116,10 +161,16 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.para3 img{
+  background-color: gray;
+  margin-left: 650px;
+  margin-bottom: 0px;
+  height: 45px;
+}
 .para3 h1,.para3 h2{
   text-align: center;
   color: white;
-  font-weight: bolder;
+  font-weight: bold;
 }
 .para3 p{
   text-align: center;
@@ -129,18 +180,23 @@
   padding-top: 30px;
   margin-bottom: 0px;
 }
+.para3a{
+  color: white;
+}
 .para3b{
  text-align: center;
   font-size: 20px;
+  font-weight: bold;
   margin-left: 150px;
   margin-right: 150px;
-  margin-top: 5px; 
+  margin-top: 5px;
+  color: yellow; 
 }
 .para4{
   background-color: white;
   padding-top: 60px;
   padding-bottom: 60px;
-  padding-left: 100px;
+  padding-left: 60px;
 }
 .para4 h1,.para4 h2{
   text-align: center;
@@ -165,10 +221,6 @@
   align-content: center;
 }
 
-.gallery:hover,.gallery1:hover {
-  border: 1px solid rgb(20,100,100);
-}
-
 .gallery img,.gallery1 img{
   width: 60%;
   height: auto;
@@ -180,6 +232,11 @@
   margin-left: 0px;
   color: red;
   font-weight: bold;
+}
+
+.gallery1:hover,.gallery:hover{
+  border:1px solid white;
+   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
 }
 .gallery1{
   margin-left: 230px;
@@ -198,7 +255,7 @@
 }
 .last2{
   background-color: blue;
-  padding: 10px;
+  padding: 15px;
   padding-left: 150px;
   font-weight: bold;
   color: white;
